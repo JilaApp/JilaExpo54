@@ -21,4 +21,4 @@ expo-env.d.ts
 
 # local env files
 .env
-.env*.local
+.env*.local.expo/
