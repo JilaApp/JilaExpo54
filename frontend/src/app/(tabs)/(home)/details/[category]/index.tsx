@@ -143,7 +143,7 @@ export default function DetailsScreen() {
       />
       <View className="w-full bg-[#A30700] flex items-start">
         <TouchableOpacity
-          onPress={() => router.back()}
+          onPress={() => router.push('/')}
           activeOpacity={0.5}
           className="px-4 py-2"
         >
