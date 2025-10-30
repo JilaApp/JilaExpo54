@@ -89,6 +89,30 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="supporters/index"
+        options={{
+          tabBarShowLabel: false,
+          tabBarIcon: ({ focused }) => {
+            return (
+              <View
+                className={`w-12 h-12 rounded-full justify-center items-center ${
+                  focused ? "bg-white" : "bg-transparent"
+                }`}
+              >
+                <Ionicons
+                  name="people"
+                  size={27}
+                  color={focused ? "#7E0601" : "white"}
+                />
+              </View>
+            );
+          },
+          headerTitle: () => (
+            <Ionicons name="people" size={48} color={"white"} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
